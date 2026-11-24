@@ -32,6 +32,9 @@ if (WEB / "project-background.webp").exists():
     background = "data:image/webp;base64," + base64.b64encode(
         (WEB / "project-background.webp").read_bytes()).decode("ascii")
 template = template.replace("__PROJECT_ART__", art).replace("__PROJECT_BG__", background)
+for key in ("vnuk", "joystick", "phoenix", "arni"):
+    icon = base64.b64encode((WEB / f"badge-{key}.webp").read_bytes()).decode("ascii")
+    template = template.replace(f"__BADGE_{key.upper()}__", "data:image/webp;base64," + icon)
 snapshot = json.loads((ROOT / "data/snapshot.json").read_text())
 payload = json.dumps(snapshot, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")
 result = template.replace("__SNAPSHOT__", payload)

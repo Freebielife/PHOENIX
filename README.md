@@ -29,9 +29,7 @@ Cloudflare dispatch registration and GitHub repository access remain separate de
 Logo and section flag: user-supplied Phoenix image. Hero: orange/red.
 DEXes: STON.fi and DeDust, verified direct PHXPW/TON swaps.
 Common OG, +888, four-digit TON DNS and burn badges plus VNUK, Joystick,
-Phoenix, ARNI, NAPIWAS, blue NFT and JVault. DEV and Author NFT excluded.
-JVault badge retains the original LUDOMAN ≥500,000 staking rule in pool 216;
-it does not assert Phoenix staking. Sources and thresholds are in project.json.
+Phoenix, ARNI, NAPIWAS and 🥚 NFT. DEV, Author NFT and JVault excluded.
 
 GitHub Actions fallback schedule: every 30 minutes at :17/:47 UTC, subject to
 GitHub scheduling delays. The shared Cloudflare runner has not been modified.

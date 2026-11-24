@@ -21,11 +21,10 @@ class PhoenixBadgeBoundaries(unittest.TestCase):
         with patch.object(badges,'discover',return_value=(set(amounts),42)),patch.object(badges,'position',side_effect=amounts.__getitem__),patch.object(badges.time,'sleep'):
             self.assertEqual(badges.stake({})['wallets'],{owner:True})
 
-    def test_failed_jvault_source_retains_previous_verified_proof(self):
-        previous={'sources':{'jvault':{'asOf':1,'wallets':{'wallet':True}}}}
-        with patch.object(badges,'refresh_generic',return_value={'sources':{},'failed':[]}),patch.object(badges,'stake',side_effect=OSError('offline')):
-            result=badges.refresh(previous,100000)
-        self.assertEqual(result['sources']['jvault'],previous['sources']['jvault'])
-        self.assertIn('jvault',result['failed'])
+    def test_removed_jvault_is_not_refreshed(self):
+        with patch.object(badges,'refresh_generic',return_value={'sources':{},'failed':[]}),patch.object(badges,'stake') as stake:
+            result=badges.refresh({'sources':{'jvault':{'asOf':1}}},100000)
+        stake.assert_not_called()
+        self.assertNotIn('jvault',result['sources'])
 
 if __name__=='__main__': unittest.main()

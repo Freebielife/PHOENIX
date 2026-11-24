@@ -288,7 +288,7 @@ function hasDomainBadge(wallet){
   return Boolean(linkedDomain(wallet)||numericDomains(wallet).names.length);
 }
 
-const customBadgeDefs=[{"id":"vnuk","label":"VNUK","description_ru":"VNUK ≥ 200 000 / NFT","description_en":"VNUK ≥ 200 000 / NFT","url":"https://t.me/mRvnukICHlife"},{"id":"joystick","label":"Joystick","description_ru":"JSI ≥ 200 000 / NFT","description_en":"JSI ≥ 200 000 / NFT","url":"https://t.me/joystickpro"},{"id":"phoenix","label":"Phoenix","description_ru":"PHXPW ≥ 200 000","description_en":"PHXPW ≥ 200 000","url":"https://t.me/PHXPW"},{"id":"arni","label":"ARNI","description_ru":"ARNI > 50 000","description_en":"ARNI > 50 000","url":"https://t.me/TonArnold"},{"id":"napiwas","label":"NAPIWAS","description_ru":"NAPIWAS ≥ 1 000 000","description_en":"NAPIWAS ≥ 1 000 000","url":"https://t.me/NAPIWASofficial"},{"id":"blue_nft","label":"🔵 NFT","description_ru":"NFT","description_en":"NFT","url":"https://getgems.io/collection/EQBmoucipH0QT_qpd361W-9zUlyFsSl1FD1GIY0AfXdpPQW8"},{"id":"jvault","label":"JVault","description_ru":"Стейкинг LUDOMAN ≥ 500 000 в пуле JVault 216","description_en":"LUDOMAN stake ≥ 500,000 in JVault pool 216","url":"https://jvault.xyz/staking/v2/stake/LUDOMAN"}];
+const customBadgeDefs=[{"id":"vnuk","label":"VNUK","description_ru":"VNUK ≥ 200 000 / NFT","description_en":"VNUK ≥ 200 000 / NFT","url":"https://t.me/mRvnukICHlife"},{"id":"joystick","label":"Joystick","description_ru":"JSI ≥ 200 000 / NFT","description_en":"JSI ≥ 200 000 / NFT","url":"https://t.me/joystickpro"},{"id":"phoenix","label":"Phoenix","description_ru":"PHXPW ≥ 200 000","description_en":"PHXPW ≥ 200 000","url":"https://t.me/PHXPW"},{"id":"arni","label":"ARNI","description_ru":"ARNI > 50 000","description_en":"ARNI > 50 000","url":"https://t.me/TonArnold"},{"id":"napiwas","label":"NAPIWAS","description_ru":"NAPIWAS ≥ 1 000 000","description_en":"NAPIWAS ≥ 1 000 000","url":"https://t.me/NAPIWASofficial"},{"id":"blue_nft","label":"🥚 NFT","description_ru":"NFT","description_en":"NFT","url":"https://getgems.io/collection/EQBmoucipH0QT_qpd361W-9zUlyFsSl1FD1GIY0AfXdpPQW8"}];
 const fragmentCollection="0:0e41dc1dc3c9067ed24248580e12b3359818d83dee0304fabcf80845eafafdb2";
 
 
@@ -329,8 +329,8 @@ function appendProjectBadges(wrapper,wallet,verifiedDomain,ownsFragment){
     const image=document.querySelector(
       '#wallets .badgeLegend dt[data-project-badge="'+definition.id+'"] img');
     if(image)badge.append(image.cloneNode(true));
-    else badge.append(el("span",definition.label.slice(0,2),"customBadgeSymbol"));
-    badge.append(el("span",definition.label,"badgeLabel"));
+    else badge.append(el("span",definition.id==="blue_nft"?"🥚":"🍺","customBadgeSymbol"));
+    badge.append(el("span",definition.id==="blue_nft"?"NFT":definition.label,"badgeLabel"));
     badges.append(badge);
   }
   if((burnTotals?.get(wallet)||0n)>=1000n*10n**9n){
@@ -706,7 +706,7 @@ function stats(){
 function row(first,sub,value,last){const a=el("div"),b=el("div"),d=el("div",undefined,"row");a.append(first,sub);b.append(value,last);d.append(a,b);return d}
 
 /* Shared badge definitions: the same keys drive labels, filters and future observatories. */
-const badgeFilterDefs=[["og","OG"],["fragmentNumber","+888"],["digits","0000.ton"],["burner","🔥 Burn"],["vnuk","VNUK"],["joystick","Joystick"],["phoenix","Phoenix"],["arni","ARNI"],["napiwas","NAPIWAS"],["blue_nft","🔵 NFT"],["jvault","JVault"]];
+const badgeFilterDefs=[["og","OG"],["fragmentNumber","+888"],["digits","0000.ton"],["burner","🔥 Burn"],["vnuk","VNUK"],["joystick","Joystick"],["phoenix","Phoenix"],["arni","ARNI"],["napiwas","NAPIWAS"],["blue_nft","🥚 NFT"]];
 const selectedBadgeFilters=new Set();
 function hasWalletBadge(wallet,key){
  if(key==="digits")return numericDomains(wallet).names.length>0;

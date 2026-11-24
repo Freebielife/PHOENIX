@@ -8,9 +8,9 @@ User-approved constraints:
 - Use the supplied Phoenix emblem as both the hero logo and section flag.
 - Hero colours follow the orange/red emblem.
 - Keep common OG, +888, four-digit TON DNS and burn badges.
-- Keep VNUK, Joystick, Phoenix, ARNI, NAPIWAS, blue NFT and JVault rules.
-- Never add DEV or Author NFT. JVault refers to the explicitly labelled
-  LUDOMAN staking pool 216; it does not assert PHXPW staking.
+- Keep VNUK, Joystick, Phoenix, ARNI, NAPIWAS and NFT rules.
+- NFT uses 🥚; embed Ludoman reference badge artwork.
+- Never add DEV, Author NFT or JVault badges.
 
 Before completing edits, run the Python/JavaScript tests, build.py and verify.py.
 Check the final HTML on mobile and desktop, RU/EN, buttons, links, chart,

@@ -191,15 +191,4 @@ from urllib.parse import urlencode
 POOL = "EQANDE3kcYMMSkumPIuj0BWLi2kTTRXng6FSYrvRbEpUv877"
 POOL_RAW = raw_friendly(POOL)
 def refresh(previous, now):
-    result = refresh_generic(previous, now)
-    prior = previous.get("sources", {}).get("jvault", {})
-    if prior:
-        result["sources"]["jvault"] = prior
-    if prior.get("asOf", 0) <= now - 6*3600:
-        try:
-            print("Checking badge: jvault", flush=True)
-            result["sources"]["jvault"] = {"asOf": now, **stake(prior)}
-        except (OSError, ValueError, KeyError, RuntimeError) as error:
-            result["failed"].append("jvault")
-            print("JVault badge source unavailable:", type(error).__name__, flush=True)
-    return result
+    return refresh_generic(previous, now)

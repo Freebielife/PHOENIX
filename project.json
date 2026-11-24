@@ -135,7 +135,7 @@
     },
     {
       "id": "blue_nft",
-      "label": "🔵 NFT",
+      "label": "🥚 NFT",
       "url": "https://getgems.io/collection/EQBmoucipH0QT_qpd361W-9zUlyFsSl1FD1GIY0AfXdpPQW8",
       "description_ru": "NFT",
       "description_en": "NFT",
@@ -143,21 +143,6 @@
         {
           "type": "nft_collection",
           "collection": "EQBmoucipH0QT_qpd361W-9zUlyFsSl1FD1GIY0AfXdpPQW8"
-        }
-      ]
-    },
-    {
-      "id": "jvault",
-      "label": "JVault",
-      "description_ru": "Стейкинг LUDOMAN ≥ 500 000 в пуле JVault 216",
-      "description_en": "LUDOMAN stake ≥ 500,000 in JVault pool 216",
-      "url": "https://jvault.xyz/staking/v2/stake/LUDOMAN",
-      "criteria": [
-        {
-          "type": "jvault_position",
-          "pool": "EQANDE3kcYMMSkumPIuj0BWLi2kTTRXng6FSYrvRbEpUv877",
-          "min_balance": 500000,
-          "decimals": 9
         }
       ]
     }

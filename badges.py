@@ -18,6 +18,7 @@ def refresh_generic(previous, now):
     sources = {key: old[key] for key in BADGE_RULES if key in old}
     failed = []
     for key, spec in BADGE_RULES.items():
+        print("Checking badge:", key, flush=True)
         last = sources.get(key, {})
         if last.get("asOf", 0) > now - 6 * 3600:
             continue
@@ -196,6 +197,7 @@ def refresh(previous, now):
         result["sources"]["jvault"] = prior
     if prior.get("asOf", 0) <= now - 6*3600:
         try:
+            print("Checking badge: jvault", flush=True)
             result["sources"]["jvault"] = {"asOf": now, **stake(prior)}
         except (OSError, ValueError, KeyError, RuntimeError) as error:
             result["failed"].append("jvault")

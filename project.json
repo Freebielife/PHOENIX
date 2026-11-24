@@ -50,8 +50,8 @@
     "checked_at": "2026-11-24"
   },
   "logo_file": "web/project-logo.webp",
-  "logo_origin": "token_metadata",
-  "logo_source": "https://raw.githubusercontent.com/PhoenixPaw/PhoenixPaw/refs/heads/main/ava.jpg",
+  "logo_origin": "user_provided",
+  "logo_source": "user-provided:image(20261123-212751).png",
   "flag_file": "web/project-flag.webp",
   "flag_source": "User supplied Phoenix logo, approved as section flag",
   "badges": [
@@ -207,8 +207,8 @@
   },
   "branding": {
     "hero": {
-      "origin": "token_metadata",
-      "source": "https://raw.githubusercontent.com/PhoenixPaw/PhoenixPaw/refs/heads/main/ava.jpg",
+      "origin": "user_provided",
+      "source": "user-provided:image(20261123-212751).png",
       "file": "web/project-logo.webp"
     },
     "sectionFlag": {
@@ -218,5 +218,6 @@
       "file": "web/project-flag.webp"
     },
     "channel": "https://t.me/PHXPW"
-  }
+  },
+  "metadata_logo_source": "https://raw.githubusercontent.com/PhoenixPaw/PhoenixPaw/refs/heads/main/ava.jpg"
 }

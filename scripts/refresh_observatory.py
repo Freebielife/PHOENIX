@@ -45,7 +45,7 @@ def refresh() -> dict:
         raise ValueError("Generated token identity or snapshot schema mismatch")
     check_identity(snap, read_project(ROOT))
     errors = set(snap.get("errors", ()))
-    errors.update(key for key in UNINDEXED if key not in snap)
+    errors.update(key for key in UNINDEXED | {"badges"} if key not in snap)
 
     def stage(key, read, *, interval=0):
         prior = snap.get(key, {})

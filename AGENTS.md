@@ -1,40 +1,22 @@
-# TON Observatory Template — canonical shared source
+# Phoenix Observatory
 
-This repository is the canonical basis for future observatories. Do not read or
-clone Freebielife/Ludoman to generate a new site. Use only this repository's local
-reference/ files, scripts, shared registry and tests. Ludoman is an independent
-project and may be changed without migrating its customizations here.
+This is the Phoenix PHXPW project generated from TON-Observatory-Template 1.3.0.
+Use project.json as the token, pool, branding and badge configuration source.
+Do not generate from or change the Ludoman or KITO repositories.
 
-Before creating a site:
-- Read docs/BRANDING_STANDARD.md and docs/PROJECT_WORKFLOW.md.
-- Gather contract, repository, metadata/site logo with source, explicitly selected
-  section flag and project Telegram channel. Find verifiable inputs independently;
-  ask only for missing essential inputs. Never invent a channel or flag mapping.
-- Verify infrastructure access before long collection: repository, Actions rights,
-  shared scheduler registry and snapshot URLs. Do not print or embed secrets.
-- Use project.json for token-specific settings. No inherited DEV wallets, NFT,
-  staking or promotional rules. Common OG/+888/four-digit DNS/burn badges remain.
-- Add a project/token description to every repository's README. Match the exact
-  contract before researching official websites, documentation, linked channels
-  and token metadata. Save project_description with text, origin, source URLs and
-  checked_at date in project.json. Attribute self-descriptions; never turn a
-  roadmap, promotion or promised return into an established fact. Missing identity
-  or sources must remain explicit; do not identify a token by name alone.
-- Classify services through Tonkeeper first, then corroborated additional sources;
-  normalize address forms and retain attribution provenance.
+User-approved constraints:
+- Use the supplied Phoenix emblem as both the hero logo and section flag.
+- Hero colours follow the orange/red emblem.
+- Keep common OG, +888, four-digit TON DNS and burn badges.
+- Keep VNUK, Joystick, Phoenix, ARNI, NAPIWAS, blue NFT and JVault rules.
+- Never add DEV or Author NFT. JVault refers to the explicitly labelled
+  LUDOMAN staking pool 216; it does not assert PHXPW staking.
 
-Before reporting completion:
-- Verify the actual final HTML on mobile and desktop, navigation, buttons, RU/EN,
-  charts, labels, 10->20 holders, overflow and self-contained rendering resources.
-- Check size, token/pool identity, stale/missing states and last-good-data retention.
-- Check the README description and its sources before publication. Metadata may
-  supply a clearly attributed self-description; technical addresses are not prose.
-- Distinguish code saved, HTML verified, site published and automatic refresh verified.
-- Report template version, commit/HTML identity, size, checks, publication/update
-  status and any unverified capabilities. Do not claim a scheduled run was verified
-  unless it was observed.
+Before completing edits, run the Python/JavaScript tests, build.py and verify.py.
+Check the final HTML on mobile and desktop, RU/EN, buttons, links, chart,
+10-to-20 holder expansion and horizontal overflow. Keep rendering resources
+embedded. Preserve last successful data and distinguish missing/incomplete data.
 
-Do not overwrite concurrent repository changes. Keep a recoverable previous
-version. Never change KITO or migrate existing sites without a separate request.
-Do not deploy the example scheduler over the live shared runner: its registry is
-intentionally empty and all current project registrations must be preserved.
+Keep concurrent remote changes. Report code/HTML checks separately from observed
+Actions runs, scheduled runs and TON Storage publication. Do not modify the shared
+Cloudflare runner without preserving its complete current registry.

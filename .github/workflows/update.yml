@@ -33,6 +33,7 @@ jobs:
           node --check web/app.js
           node --test tests/*.test.cjs
       - name: Collect on-chain data
+        timeout-minutes: 18
         id: collect
         continue-on-error: true
         run: python3 -m scripts.refresh_observatory

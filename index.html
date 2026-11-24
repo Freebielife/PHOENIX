@@ -1986,7 +1986,7 @@ function stats(){
 function row(first,sub,value,last){const a=el("div"),b=el("div"),d=el("div",undefined,"row");a.append(first,sub);b.append(value,last);d.append(a,b);return d}
 
 /* Shared badge definitions: the same keys drive labels, filters and future observatories. */
-const badgeFilterDefs=[["og","OG"],["fragmentNumber","+888"],["digits","0000.ton"],["burner","🔥 Burn"],["vnuk","VNUK"],["joystick","Joystick"],["phoenix","Phoenix"],["arni","ARNI"],["napiwas","NAPIWAS"],["blue_nft","🔵 NFT"]];
+const badgeFilterDefs=[["og","OG"],["fragmentNumber","+888"],["digits","0000.ton"],["burner","🔥 Burn"],["vnuk","VNUK"],["joystick","Joystick"],["phoenix","Phoenix"],["arni","ARNI"],["napiwas","NAPIWAS"],["blue_nft","🔵 NFT"],["jvault","JVault"]];
 const selectedBadgeFilters=new Set();
 function hasWalletBadge(wallet,key){
  if(key==="digits")return numericDomains(wallet).names.length>0;

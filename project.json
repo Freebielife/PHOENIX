@@ -1,0 +1,222 @@
+{
+  "slug": "phoenix",
+  "name": "Phoenix",
+  "symbol": "PHXPW",
+  "master": "EQABtSLSzrAOISWPfIjBl2VmeStkM1eHaPrUxRTj8mY-9h43",
+  "decimals": 9,
+  "github": {
+    "owner": "Freebielife",
+    "repo": "PHOENIX"
+  },
+  "pools": [
+    {
+      "address": "EQAdltEfzXG_xteLFaKFGd-HPVKrEJqv_FdC7z2roOddRNdM",
+      "dex": "stonfi",
+      "quote": "TON",
+      "evidence": "https://tonapi.io/v2/accounts/EQAdltEfzXG_xteLFaKFGd-HPVKrEJqv_FdC7z2roOddRNdM/events?limit=100"
+    },
+    {
+      "address": "EQCR43SC9DIpXwlJpz7TCUXY033rS3CEjWj99j35PiMPX3un",
+      "dex": "dedust",
+      "quote": "TON",
+      "evidence": "https://tonapi.io/v2/accounts/EQCR43SC9DIpXwlJpz7TCUXY033rS3CEjWj99j35PiMPX3un/events?limit=100"
+    }
+  ],
+  "primary_pool": "EQAdltEfzXG_xteLFaKFGd-HPVKrEJqv_FdC7z2roOddRNdM",
+  "links": {
+    "telegram": "https://t.me/PHXPW",
+    "website": "https://phoenixpaw.io",
+    "x": "https://x.com/PawPhoenixoff"
+  },
+  "services": {
+    "UQD4uGNdB4a3f52mYOZf0x1nCmdd1DAvrLppL0a1cetTYCQx": "Binance",
+    "EQDPfqI17W9lF-3OmAJu92GOn22BoTMdTmW6cY4s0V-ArRRY": "Bybit"
+  },
+  "engine_version": "1.3.0",
+  "discovery": {
+    "checkedAt": 1795504354,
+    "sources": [
+      "https://tonapi.io/v2/jettons/EQABtSLSzrAOISWPfIjBl2VmeStkM1eHaPrUxRTj8mY-9h43",
+      "https://api.geckoterminal.com/api/v2/networks/ton/tokens/EQABtSLSzrAOISWPfIjBl2VmeStkM1eHaPrUxRTj8mY-9h43/pools?page=1"
+    ],
+    "primaryPoolPolicy": "largest indexed USD liquidity among swap-verified supported TON pools"
+  },
+  "project_description": {
+    "text": "AI-powered ecosystem of services for earning, work, games, and entertainment.",
+    "origin": "token_metadata",
+    "sources": [
+      "https://tonapi.io/v2/jettons/EQABtSLSzrAOISWPfIjBl2VmeStkM1eHaPrUxRTj8mY-9h43"
+    ],
+    "checked_at": "2026-11-24"
+  },
+  "logo_file": "web/project-logo.webp",
+  "logo_origin": "token_metadata",
+  "logo_source": "https://raw.githubusercontent.com/PhoenixPaw/PhoenixPaw/refs/heads/main/ava.jpg",
+  "flag_file": "web/project-flag.webp",
+  "flag_source": "User supplied Phoenix logo, approved as section flag",
+  "badges": [
+    {
+      "id": "vnuk",
+      "label": "VNUK",
+      "url": "https://t.me/mRvnukICHlife",
+      "description_ru": "VNUK ≥ 200 000 / NFT",
+      "description_en": "VNUK ≥ 200 000 / NFT",
+      "criteria": [
+        {
+          "type": "jetton_min",
+          "master": "EQCp6hbevSAM9G2WxeZDp0Mte6MPTUJouZrCNIeWHnhlOZZA",
+          "min_balance": 200000
+        },
+        {
+          "type": "nft_collection",
+          "collection": "EQBHe9CCEGOW6xpnLEqUx3bJ3lYgaCXmlokE5xPckXtY3f4X"
+        }
+      ]
+    },
+    {
+      "id": "joystick",
+      "label": "Joystick",
+      "url": "https://t.me/joystickpro",
+      "description_ru": "JSI ≥ 200 000 / NFT",
+      "description_en": "JSI ≥ 200 000 / NFT",
+      "criteria": [
+        {
+          "type": "jetton_min",
+          "master": "EQBJpyjYjsZ5xhqClAgaSqVHlgFtsJvclU-93Ah-LequH5uC",
+          "min_balance": 200000
+        },
+        {
+          "type": "nft_collection",
+          "collection": "EQCZIvCtiPmacSrvOUvsJE7P5si6letm0Bo0EYMl5c5F-cbQ"
+        }
+      ]
+    },
+    {
+      "id": "phoenix",
+      "label": "Phoenix",
+      "url": "https://t.me/PHXPW",
+      "description_ru": "PHXPW ≥ 200 000",
+      "description_en": "PHXPW ≥ 200 000",
+      "criteria": [
+        {
+          "type": "jetton_min",
+          "master": "EQABtSLSzrAOISWPfIjBl2VmeStkM1eHaPrUxRTj8mY-9h43",
+          "min_balance": 200000
+        }
+      ]
+    },
+    {
+      "id": "arni",
+      "label": "ARNI",
+      "url": "https://t.me/TonArnold",
+      "description_ru": "ARNI > 50 000",
+      "description_en": "ARNI > 50 000",
+      "criteria": [
+        {
+          "type": "jetton_min",
+          "master": "EQAZzZzhBdrPwxFVQHWlMHbDY_eOk3LeUPr07VWdX4B0193M",
+          "min_balance": 50000
+        }
+      ]
+    },
+    {
+      "id": "napiwas",
+      "label": "NAPIWAS",
+      "url": "https://t.me/NAPIWASofficial",
+      "description_ru": "NAPIWAS ≥ 1 000 000",
+      "description_en": "NAPIWAS ≥ 1 000 000",
+      "criteria": [
+        {
+          "type": "jetton_min",
+          "master": "EQDOCUp_pDBvOmGRyEDE2bnCl2cjGmAWjPsTWRt_veSsfGSn",
+          "min_balance": 1000000
+        }
+      ]
+    },
+    {
+      "id": "blue_nft",
+      "label": "🔵 NFT",
+      "url": "https://getgems.io/collection/EQBmoucipH0QT_qpd361W-9zUlyFsSl1FD1GIY0AfXdpPQW8",
+      "description_ru": "NFT",
+      "description_en": "NFT",
+      "criteria": [
+        {
+          "type": "nft_collection",
+          "collection": "EQBmoucipH0QT_qpd361W-9zUlyFsSl1FD1GIY0AfXdpPQW8"
+        }
+      ]
+    },
+    {
+      "id": "jvault",
+      "label": "JVault",
+      "description_ru": "Стейкинг LUDOMAN ≥ 500 000 в пуле JVault 216",
+      "description_en": "LUDOMAN stake ≥ 500,000 in JVault pool 216",
+      "url": "https://jvault.xyz/staking/v2/stake/LUDOMAN",
+      "criteria": [
+        {
+          "type": "jvault_position",
+          "pool": "EQANDE3kcYMMSkumPIuj0BWLi2kTTRXng6FSYrvRbEpUv877",
+          "min_balance": 500000,
+          "decimals": 9
+        }
+      ]
+    }
+  ],
+  "additional_links": [
+    {
+      "label": "Telegram community 1",
+      "url": "https://t.me/+5gUYq_iIpi82NDVi"
+    },
+    {
+      "label": "Telegram community 2",
+      "url": "https://t.me/+MQzPg8BtXeljZjJk"
+    },
+    {
+      "label": "Telegram community 3",
+      "url": "https://t.me/+Nk6qryrz6EkxZWRk"
+    }
+  ],
+  "excluded_badges": [
+    "DEV",
+    "author"
+  ],
+  "service_provenance": {
+    "0:f8b8635d0786b77f9da660e65fd31d670a675dd4302facba692f46b571eb5360": {
+      "category": "custody",
+      "source": "User-provided attribution, 2026-11-22; ownership not independently verified"
+    },
+    "0:cf7ea235ed6f6517edce98026ef7618e9f6d81a1331d4e65ba718e2cd15f80ad": {
+      "category": "custody",
+      "source": "User-provided attribution, 2026-11-22; ownership not independently verified"
+    }
+  },
+  "template_repository": "Freebielife/TON-Observatory-Template",
+  "max_html_bytes": 2500000,
+  "ui": {
+    "holders_initial": 10,
+    "holders_expanded": 20
+  },
+  "methodology": {
+    "valuation": "last observed swap in primary_pool times CURRENT total supply; not circulating market cap",
+    "primary_pool": "EQAdltEfzXG_xteLFaKFGd-HPVKrEJqv_FdC7z2roOddRNdM",
+    "sellers": "sum of successful supported native TON swap sales; service roles excluded",
+    "holders": "balances excluding known services and identified contracts; unclassified accounts may remain until verified",
+    "burns": "accepted burn notifications and zero-address transfers shown as distinct evidence",
+    "usd": "historical TON/USD rate from CoinGecko",
+    "history": "incremental confirmed swaps; missing intervals remain partial"
+  },
+  "branding": {
+    "hero": {
+      "origin": "token_metadata",
+      "source": "https://raw.githubusercontent.com/PhoenixPaw/PhoenixPaw/refs/heads/main/ava.jpg",
+      "file": "web/project-logo.webp"
+    },
+    "sectionFlag": {
+      "source": "User supplied Phoenix logo, approved as section flag",
+      "catalogueKey": null,
+      "emoji": null,
+      "file": "web/project-flag.webp"
+    },
+    "channel": "https://t.me/PHXPW"
+  }
+}
